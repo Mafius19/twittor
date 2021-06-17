@@ -11,6 +11,15 @@
     font-size: 16px;
     background-color: #dde1e2; 
     width: 100%;
+
+    /* evitar que se pueda recargar la pagina en la pwa (pull-to-refresh) y asi no matar la experiencia */
+    overscroll-behavior-y: contain;
+    /* para evitar que  se hagan selecciones en el texto de la app */
+    -webkit-user-select: none;
+    /* deshabilitar el resaltado */
+    -webkit-tap-highlight-color: transparent;
+    /* deshabilitar callout */
+    -webkit-touch-callout: none;
 }
 
 /* Personalizados */
